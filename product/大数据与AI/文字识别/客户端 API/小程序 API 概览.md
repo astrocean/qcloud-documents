@@ -1,6 +1,7 @@
 
 小程序端文字识别 SDK 主要涉及的有 start 方法，下面对该方法做出详细说明。
 
+
 ## 调用示例
 
 ```javascript
@@ -107,8 +108,8 @@ ocrSdk.start({
         success(res) {
           let credentials = res.Credentials;
           resolve({
-            secretId: credentials.TmpSecretId,
-            secretKey: credentials.TmpSecretKey,
+            tmpSecretId: credentials.TmpSecretId,
+            tmpSecretKey: credentials.TmpSecretKey,
             token: credentials.Token,
           })
         },
